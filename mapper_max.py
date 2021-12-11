@@ -8,10 +8,6 @@ def mapper():
             data = line.strip().split(",")
             timestamp, city, item, cost = data
             print(city + "," + cost)
-        elif len(line.strip().split(",")) > 4:
-            data = line.strip().split(",")[0:4]
-            timestamp, city, item, cost = data
-            print(city + "," + cost)
         else:
             pass
             
